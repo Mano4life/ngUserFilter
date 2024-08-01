@@ -10,5 +10,10 @@ import { BodyComponent } from './body/body.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'users';
+  searchTerm:string = ''
+
+  onSearch(searchTerm: string): void {
+    this.searchTerm = searchTerm
+  }
+
 }
